@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Account" max_length="40" name="x_77646_custcldmgt_account" type="collection">
+        <element label="Account ID" max_length="14" name="account_id" type="string"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element label="Primary AWS Credential" max_length="32" name="primary_aws_credential" reference="x_77646_custcldmgt_credentials" type="reference"/>
+        <index name="index">
+            <element name="primary_aws_credential"/>
+        </index>
+    </element>
+</database>
